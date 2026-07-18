@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/style.css">
+	<title>DOM</title>
+</head>
+
+<body>
+	<div id="message">
+		Hover over an image below to display here.
+	</div>
+	<div class="preview">
+		<img alt="Styling with a Bandana" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg"
+			onmouseover="update(this)" onmouseout="unDo()">
+
+		<img alt="With My Boy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG"
+			onmouseover="update(this)" onmouseout="unDo()">
+
+		<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt="Young Puppy"
+			onmouseover="update(this)" onmouseout="unDo()">
+	</div>
+
+
+
+	<script src="/js/script.js"></script>
+</body>
+
+</html>
