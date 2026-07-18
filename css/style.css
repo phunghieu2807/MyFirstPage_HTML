@@ -39,6 +39,6 @@ body {
 	border: 3px solid black;
 }
 
-.previewy img:hover {
+.preview img:hover {
 	transform: scale(1.05);
 }
