@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ApexCraft - Responsive Web & Mobile Design Studio layout matching wireframe designs.">
+    <title>ApexCraft - Web & Mobile Design Studio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP HEADER -->
+    <header class="site-header" id="main-header">
+        <div class="header-container">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-logo">
+                <div class="logo-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <span class="logo-text">Apex<span>Craft</span></span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">HEADER / Trang chủ</a></li>
+                    <li><a href="#services" class="nav-link">Dịch vụ</a></li>
+                    <li><a href="#portfolio" class="nav-link">PORTFOLIO GRID</a></li>
+                    <li><a href="#testimonials" class="nav-link">Đánh giá</a></li>
+                    <li><a href="#footer" class="nav-link">FOOTER / Liên hệ</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search Bar & Actions -->
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" class="search-input" id="search-input" placeholder="Tìm kiếm trang web...">
+                    <button class="search-btn" id="search-btn" aria-label="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Hamburger Menu Button -->
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="HAMBURGER MENU">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE DRAWER MENU OVERLAY -->
+    <div class="mobile-drawer-overlay" id="drawer-overlay"></div>
+    <div class="mobile-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <div class="brand-logo">
+                <div class="logo-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <span class="logo-text">Apex<span>Craft</span></span>
+            </div>
+            <button class="drawer-close-btn" id="drawer-close-btn">&times;</button>
+        </div>
+        <div class="mobile-search-box">
+            <input type="text" placeholder="Tìm kiếm...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="#hero" class="mobile-nav-link">Trang chủ</a></li>
+            <li><a href="#services" class="mobile-nav-link">Dịch vụ (Services)</a></li>
+            <li><a href="#portfolio" class="mobile-nav-link">Portfolio Grid</a></li>
+            <li><a href="#testimonials" class="mobile-nav-link">Đánh giá (Testimonials)</a></li>
+            <li><a href="#footer" class="mobile-nav-link">Liên hệ & Footer</a></li>
+        </ul>
+        <div class="drawer-footer">
+            <a href="#contact" class="btn btn-primary btn-full">Bắt đầu dự án</a>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT AREA -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-label-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> HERO SECTION</span>
+                    <h1 class="hero-title">Thiết Kế & Phát Triển Website Chuẩn Responsive</h1>
+                    <p class="hero-subtitle">
+                        Tạo dựng giao diện độc đáo, chuẩn Wireframe Desktop và Mobile. Mang lại trải nghiệm người dùng tuyệt vời với tốc độ tối ưu và thẩm mỹ hiện đại.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Xem Portfolio</a>
+                        <a href="#services" class="btn btn-secondary"><i class="fa-solid fa-circle-play"></i> Khám Phá Dịch Vụ</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Dự Án Hoàn Thành</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">99.8%</span>
+                            <span class="stat-label">Hài Lòng Từ Khách Hàng</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Hỗ Trợ Kỹ Thuật</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Media / Image Placeholder -->
+                <div class="hero-media">
+                    <div class="hero-image-wrapper">
+                        <img src="images/hero.png" alt="Hero Section Wireframe Preview" class="hero-img">
+                        <div class="floating-badge badge-1">
+                            <i class="fa-solid fa-code"></i>
+                            <div>
+                                <strong>Clean Code</strong>
+                                <span>HTML5 / CSS3 / JS</span>
+                            </div>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <div>
+                                <strong>Mobile Ready</strong>
+                                <span>Fully Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED SERVICES SECTION (3-COLUMN GRID DESKTOP / 1-COLUMN MOBILE) -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fa-solid fa-cubes"></i> FEATURED SERVICES</span>
+                    <h2 class="section-title">Dịch Vụ Nổi Bật</h2>
+                    <p class="section-description">Giải pháp toàn diện giúp doanh nghiệp xây dựng sự hiện diện số chuyên nghiệp.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service Card 1 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3 class="service-title">Thiết Kế Web Desktop</h3>
+                        <p class="service-desc">
+                            Giao diện mở rộng cho màn hình lớn với đầy đủ tính năng, thanh tìm kiếm thông minh, banner ấn tượng và lưới bố cục 3 cột cân đối.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Grid layout 3 cột linh hoạt</li>
+                            <li><i class="fa-solid fa-check"></i> Thanh Header & Nav tùy biến</li>
+                            <li><i class="fa-solid fa-check"></i> Tối ưu hóa tốc độ tải trang</li>
+                        </ul>
+                        <a href="#services" class="service-link">Chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="service-card featured">
+                        <div class="card-badge">Phổ Biến</div>
+                        <div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                        <h3 class="service-title">Tối Ưu Giao Diện Mobile</h3>
+                        <p class="service-desc">
+                            Tự động co giãn theo wireframe chuẩn di động. Menu Hamburger nhỏ gọn, danh sách danh mục xếp dọc thông minh và dễ tương tác bằng cảm ứng.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Hamburger Menu dạng drawer</li>
+                            <li><i class="fa-solid fa-check"></i> Stack layout dọc nhỏ gọn</li>
+                            <li><i class="fa-solid fa-check"></i> Thao tác vuốt chạm mượt mà</li>
+                        </ul>
+                        <a href="#services" class="service-link">Chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+                        <h3 class="service-title">Wireframe & UX Prototype</h3>
+                        <p class="service-desc">
+                            Chuyển hóa từ các bản phác thảo phím tay wireframe trên sổ tay thành giao diện mã nguồn thực tế vô cùng trực quan và chính xác.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Phác thảo Wireframe chuẩn</li>
+                            <li><i class="fa-solid fa-check"></i> Thiết kế trải nghiệm UI/UX</li>
+                            <li><i class="fa-solid fa-check"></i> Đánh giá phản hồi khách hàng</li>
+                        </ul>
+                        <a href="#services" class="service-link">Chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO GRID SECTION -->
+        <section class="portfolio-section" id="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fa-solid fa-table-cells"></i> PORTFOLIO GRID</span>
+                    <h2 class="section-title">Dự Án Đã Thực Hiện</h2>
+                    <p class="section-description">Tổng hợp các mẫu giao diện website được phát triển theo quy trình thiết kế chuyên nghiệp.</p>
+                </div>
+
+                <!-- Portfolio Category Filter Tabs -->
+                <div class="portfolio-tabs">
+                    <button class="tab-btn active" data-filter="all">Tất Cả</button>
+                    <button class="tab-btn" data-filter="desktop">Desktop View</button>
+                    <button class="tab-btn" data-filter="mobile">Mobile View</button>
+                    <button class="tab-btn" data-filter="uiux">UI/UX Wireframe</button>
+                </div>
+
+                <!-- Portfolio Items Grid -->
+                <div class="portfolio-grid">
+                    <!-- Item 1 -->
+                    <div class="portfolio-card" data-category="desktop">
+                        <div class="portfolio-img-box">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="E-Commerce Dashboard">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-cat">Desktop Layout</span>
+                                <h4 class="portfolio-item-title">E-Commerce Platform</h4>
+                                <a href="#" class="portfolio-btn"><i class="fa-solid fa-eye"></i> Xem Chi Tiết</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="portfolio-card" data-category="mobile">
+                        <div class="portfolio-img-box">
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80" alt="Mobile Banking App">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-cat">Mobile View</span>
+                                <h4 class="portfolio-item-title">Mobile Banking App</h4>
+                                <a href="#" class="portfolio-btn"><i class="fa-solid fa-eye"></i> Xem Chi Tiết</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="portfolio-card" data-category="uiux">
+                        <div class="portfolio-img-box">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="SaaS Wireframe Concept">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-cat">UI/UX Wireframe</span>
+                                <h4 class="portfolio-item-title">SaaS Dashboard Prototype</h4>
+                                <a href="#" class="portfolio-btn"><i class="fa-solid fa-eye"></i> Xem Chi Tiết</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="portfolio-card" data-category="desktop">
+                        <div class="portfolio-img-box">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Corporate Agency Site">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-cat">Desktop Layout</span>
+                                <h4 class="portfolio-item-title">Corporate Agency Website</h4>
+                                <a href="#" class="portfolio-btn"><i class="fa-solid fa-eye"></i> Xem Chi Tiết</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="portfolio-card" data-category="mobile">
+                        <div class="portfolio-img-box">
+                            <img src="https://images.unsplash.com/photo-1510519138161-584459ef1967?auto=format&fit=crop&w=800&q=80" alt="Fitness Tracker Mobile">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-cat">Mobile View</span>
+                                <h4 class="portfolio-item-title">Fitness Tracker Mobile</h4>
+                                <a href="#" class="portfolio-btn"><i class="fa-solid fa-eye"></i> Xem Chi Tiết</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="portfolio-card" data-category="uiux">
+                        <div class="portfolio-img-box">
+                            <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=800&q=80" alt="Notebook Sketch Wireframe">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-cat">UI/UX Wireframe</span>
+                                <h4 class="portfolio-item-title">Hand-Drawn Spiral Sketch</h4>
+                                <a href="#" class="portfolio-btn"><i class="fa-solid fa-eye"></i> Xem Chi Tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fa-solid fa-comments"></i> TESTIMONIALS</span>
+                    <h2 class="section-title">Nhận Xét Từ Khách Hàng</h2>
+                    <p class="section-description">Ý kiến phản hồi chân thực từ đối tác và khách hàng sau khi sử dụng giao diện.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="testimonial-text">
+                            "Bố cục trang web thiết kế cực kỳ tỉ mỉ, đúng chính xác theo bản Wireframe phác thảo ban đầu. Trải nghiệm Responsive trên di động siêu mượt!"
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Nguyễn Văn Anh" class="author-avatar-img">
+                            <div class="author-info">
+                                <h4>Nguyễn Văn Anh</h4>
+                                <span>CEO & Tech Lead at InnovateX</span>
+                                <div class="rating-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="testimonial-text">
+                            "Thiết kế 3 cột trên Desktop và Hamburger Menu trên Mobile rất chuẩn mực. Khách hàng của chúng tôi đánh giá cao sự gọn gàng và dễ sử dụng."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Trần Thị Mai" class="author-avatar-img">
+                            <div class="author-info">
+                                <h4>Trần Thị Mai</h4>
+                                <span>Product Manager at TechFlow</span>
+                                <div class="rating-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="testimonial-text">
+                            "ApexCraft đã chuyển hóa các nét phác bằng bút mực đen trên sổ tay thành một sản phẩm HTML/CSS hoàn thiện vượt ngoài mong đợi!"
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Lê Hoàng Nam" class="author-avatar-img">
+                            <div class="author-info">
+                                <h4>Lê Hoàng Nam</h4>
+                                <span>UX Director at CreativeLab</span>
+                                <div class="rating-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="site-footer" id="footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <!-- Col 1: Brand & Info -->
+                <div class="footer-col footer-brand">
+                    <a href="#" class="brand-logo">
+                        <div class="logo-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <span class="logo-text">Apex<span>Craft</span></span>
+                    </a>
+                    <p class="footer-desc">
+                        Chuyên nghiệp trong thiết kế và xây dựng các giải pháp website chuẩn wireframe, tương thích tối đa từ màn hình máy tính đến thiết bị di động.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Liên Kết Nhanh</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero"><i class="fa-solid fa-chevron-right"></i> Trang Chủ</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Dịch Vụ Nổi Bật</a></li>
+                        <li><a href="#portfolio"><i class="fa-solid fa-chevron-right"></i> Portfolio Grid</a></li>
+                        <li><a href="#testimonials"><i class="fa-solid fa-chevron-right"></i> Đánh Giá</a></li>
+                        <li><a href="#footer"><i class="fa-solid fa-chevron-right"></i> Liên Hệ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Dịch Vụ</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Desktop Web Layout</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Mobile Responsive View</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Hand-drawn Wireframing</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> UI/UX Optimization</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Frontend Code Build</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Newsletter -->
+                <div class="footer-col footer-newsletter">
+                    <h4 class="footer-heading">Đăng Ký Nhận Tin</h4>
+                    <p>Nhận ngay bản tin cập nhật xu hướng thiết kế web mới nhất.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã đăng ký!');">
+                        <input type="email" placeholder="Email của bạn..." required>
+                        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Gửi</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Bar -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 ApexCraft Studio. All rights reserved. Designed according to Wireframe Sketch Layout.</p>
+                <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to Top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
